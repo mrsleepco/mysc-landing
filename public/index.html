@@ -1,51 +1,135 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MySC — Secure connection for seafarers</title>
-  <meta name="description" content="MySC — a secure, private connection built for seafarers. Coming soon." />
-  <style>
-    :root { --navy:#0A1526; --navy2:#12233d; --cyan:#00E5C7; --steel:#3E5C8A; --light:#EAF0F6; --muted:#9fb3cc; }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body { height: 100%; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: radial-gradient(120% 120% at 50% 0%, var(--navy2) 0%, var(--navy) 60%);
-      color: var(--light);
-      display: flex; align-items: center; justify-content: center;
-      min-height: 100%; text-align: center; padding: 24px;
-    }
-    .wrap { max-width: 560px; }
-    .badge {
-      width: 92px; height: 92px; margin: 0 auto 26px;
-      border-radius: 50%;
-      background: radial-gradient(circle at 50% 40%, #cfe4f2 0%, #9cc3e6 70%, #6c9fd0 100%);
-      border: 2px solid rgba(0,229,199,.5);
-      box-shadow: 0 0 40px rgba(0,229,199,.25);
-      display: flex; align-items: center; justify-content: center;
-      font-weight: 800; font-size: 30px; color: var(--navy); letter-spacing: 1px;
-    }
-    h1 { font-size: clamp(30px, 7vw, 46px); font-weight: 800; letter-spacing: 2px; }
-    h1 span { color: var(--cyan); }
-    p.tag { color: var(--muted); font-size: 16px; margin-top: 14px; line-height: 1.6; }
-    .soon {
-      margin-top: 28px; display: inline-block;
-      padding: 10px 20px; border-radius: 999px;
-      border: 1px solid rgba(0,229,199,.4); color: var(--cyan);
-      font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700;
-    }
-    .foot { margin-top: 40px; color: #5f7799; font-size: 12px; }
-    .foot a { color: var(--muted); text-decoration: none; }
-  </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MySC — Secure connection for seafarers</title>
+<meta name="description" content="MySC is a secure, private VPN built for seafarers — stay reliably online on any ship network. Your privacy first: no activity logs, no data selling."/>
+<meta property="og:title" content="MySC — Secure connection for seafarers"/>
+<meta property="og:description" content="A secure, private connection that keeps you online on any ship network."/>
+<meta property="og:type" content="website"/>
+<link rel="icon" href="/assets/favicon.png"/>
+<link rel="stylesheet" href="/style.css"/>
 </head>
 <body>
-  <main class="wrap">
-    <div class="badge">⚓</div>
-    <h1>My<span>SC</span></h1>
-    <p class="tag">A secure, private connection built for seafarers.<br>Stay online on any ship network.</p>
-    <div class="soon">Coming soon</div>
-    <p class="foot"><a href="https://t.me/MySC_group">Community</a></p>
-  </main>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/"><img src="/assets/logo.png" alt="MySC"/>My<span>SC</span></a>
+    <nav class="links">
+      <a href="#features" class="hideM">Features</a>
+      <a href="#how" class="hideM">How it works</a>
+      <a href="https://t.me/MySC_group" target="_blank" rel="noopener">Community</a>
+      <a href="#get">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <div class="wrap hero">
+    <img class="medallion" src="/assets/logo.png" alt="MySC"/>
+    <h1>Stay connected <span class="c">at sea</span></h1>
+    <p class="sub">MySC is a secure, private connection built for seafarers — engineered to keep you online on demanding ship networks, from VSAT to Starlink.</p>
+    <div class="tagpill">Privacy first · Built for ships</div>
+
+    <div id="get" class="badges">
+      <a class="badge" href="#" aria-label="Get it on Google Play (coming soon)">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.6 2.3 13.9 12 3.6 21.7c-.3-.2-.5-.6-.5-1V3.3c0-.4.2-.8.5-1z" fill="#00E5C0"/><path d="M16.9 9.1 5.2 2.4 14.9 11l2-1.9z" fill="#4A90D9"/><path d="M16.9 14.9 14.9 13l-9.7 8.6 11.7-6.7z" fill="#2E6FB5"/><path d="m19.6 10.8-2.7-1.5L14.6 12l2.3 2.3 2.7-1.5c.7-.4.7-1.6 0-2z" fill="#8EA6C4"/></svg>
+        <span class="t"><small>Coming soon to</small><b>Google Play</b></span>
+      </a>
+      <a class="badge" href="#" aria-label="Download on the App Store (coming soon)">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#E8F0F8"><path d="M16.4 12.7c0-2 1.6-3 1.7-3-.9-1.4-2.4-1.6-2.9-1.6-1.2-.1-2.4.7-3 .7-.6 0-1.6-.7-2.6-.7-1.3 0-2.6.8-3.2 2-1.4 2.4-.4 6 1 8 .7 1 1.4 2 2.4 2 1 0 1.3-.6 2.5-.6s1.5.6 2.5.6 1.7-1 2.3-2c.7-1.1 1-2.2 1-2.3 0 0-1.9-.7-2-2.8zM14.7 6.3c.5-.7.9-1.6.8-2.5-.8 0-1.7.5-2.3 1.2-.5.6-.9 1.5-.8 2.4.9.1 1.8-.4 2.3-1.1z"/></svg>
+        <span class="t"><small>Coming soon to</small><b>App Store</b></span>
+      </a>
+    </div>
+    <p class="soon-note">Launching soon. Join the <a href="https://t.me/MySC_group" target="_blank" rel="noopener">community</a> to hear the moment it's live.</p>
+  </div>
+
+  <svg class="wave" viewBox="0 0 1200 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 40 C 200 5, 350 70, 600 38 C 850 6, 1000 66, 1200 34 L1200 70 L0 70 Z"/></svg>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="wrap">
+      <h2 class="sec-title">Why MySC</h2>
+      <p class="sec-lead">Purpose-built for life at sea, where networks are hostile, filtered, and constantly changing.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/></svg></div>
+          <h3>Private by design</h3>
+          <p>We never log your browsing activity, the sites you visit, or the content of your traffic — and we never sell your data.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 16 0"/><path d="M8 12a4 4 0 0 1 8 0"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></svg></div>
+          <h3>Works on any ship network</h3>
+          <p>Tuned to get through demanding maritime connections — VSAT, Starlink and heavily-filtered crew Wi-Fi.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M8 12l4-2 4 2-4 6z" fill="currentColor" stroke="none"/></svg></div>
+          <h3>Best route, automatically</h3>
+          <p>MySC probes every server and port in parallel and connects through the fastest reachable one — every time, on every network.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="8" cy="6" r="1.6" fill="currentColor" stroke="none"/><circle cx="16" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="8" cy="18" r="1.6" fill="currentColor" stroke="none"/></svg></div>
+          <h3>Split tunneling</h3>
+          <p>Choose exactly which apps use the secure connection and which use the ship's normal internet — in two simple modes.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+          <h3>One tap to connect</h3>
+          <p>No manual port scanning, no fiddly setup. Open the app, tap once, and you're protected.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2v6M12 22a8 8 0 0 0 8-8 8 8 0 0 0-4-6.9"/><path d="M12 22a8 8 0 0 1-8-8 8 8 0 0 1 4-6.9"/></svg></div>
+          <h3>Encrypted end to end</h3>
+          <p>All traffic between your device and our servers is encrypted, so it can't be read on the networks in between.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW -->
+  <section id="how">
+    <div class="wrap">
+      <h2 class="sec-title">How it works</h2>
+      <p class="sec-lead">From install to protected in under a minute.</p>
+      <div class="steps">
+        <div class="step"><div class="n">1</div><h3>Install MySC</h3><p>Get the app from your store and open it.</p></div>
+        <div class="step"><div class="n">2</div><h3>Start your trial</h3><p>Begin your free trial — no configuration, no complexity.</p></div>
+        <div class="step"><div class="n">3</div><h3>Tap Connect</h3><p>MySC finds the best route and secures your connection automatically.</p></div>
+        <div class="step"><div class="n">4</div><h3>Stay online</h3><p>Switch networks freely — MySC adapts as you move around the ship.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="wave" viewBox="0 0 1200 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 36 C 220 66, 360 6, 600 34 C 840 62, 980 8, 1200 40 L1200 70 L0 70 Z"/></svg>
+
+  <!-- CTA -->
+  <section>
+    <div class="wrap">
+      <div class="cta">
+        <h2>Ready to stay connected?</h2>
+        <p>MySC is launching soon on Google Play and the App Store. Join the community to be first to know.</p>
+        <div class="badges">
+          <a class="badge" href="https://t.me/MySC_group" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#3EA6E0"><path d="M21.9 4.3 2.9 11.6c-1 .4-1 1.3-.1 1.6l4.7 1.5 1.8 5.6c.2.5.4.6.8.6.4 0 .6-.2.9-.5l2.4-2.3 4.8 3.6c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.2-.5-1.8-1.9-1.3z"/></svg>
+            <span class="t"><small>Join us on</small><b>Telegram</b></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div class="fl">
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+      <a href="mailto:rearrearerror@gmail.com">Support</a>
+      <a href="https://t.me/MySC_group" target="_blank" rel="noopener">Community</a>
+    </div>
+    <div class="small">© 2026 MySC · A secure connection for seafarers</div>
+  </div>
+</footer>
 </body>
 </html>
