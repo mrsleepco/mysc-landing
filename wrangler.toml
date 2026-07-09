@@ -1,0 +1,6 @@
+name = "mysc-landing"
+compatibility_date = "2025-01-01"
+
+# Static-assets-only Worker: no script, just serve the files in ./public
+[assets]
+directory = "./public"
