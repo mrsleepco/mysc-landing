@@ -24,9 +24,15 @@ a:hover{opacity:.85}
 header{position:sticky;top:0;z-index:20;backdrop-filter:blur(10px);
   background:rgba(10,21,38,.72);border-bottom:1px solid var(--card-border)}
 .nav{display:flex;align-items:center;gap:14px;height:64px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:1px;font-size:19px;color:var(--light)}
-.brand img{width:30px;height:30px}
-.brand span{color:var(--cyan)}
+.brand{display:flex;align-items:center;gap:11px}
+.brand img{width:36px;height:36px}
+.brand .btxt{display:flex;flex-direction:column;line-height:1.02}
+.brand .btxt b{font-weight:800;font-size:18px;letter-spacing:.5px;color:var(--light)}
+.brand .btxt b i{font-style:normal;color:var(--cyan)}
+.brand .btxt em{font-style:normal;font-weight:600;font-size:9.5px;letter-spacing:.8px;color:var(--muted);text-transform:uppercase;margin-top:2px}
+.eyebrow{color:var(--cyan);font-size:12.5px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:12px}
+.badge.soon{cursor:default}
+.badge.soon:hover{transform:none;border-color:var(--card-border);opacity:1}
 .nav .links{margin-left:auto;display:flex;gap:22px;align-items:center}
 .nav .links a{color:var(--muted);font-size:14px;font-weight:600}
 .nav .links a:hover{color:var(--light)}
