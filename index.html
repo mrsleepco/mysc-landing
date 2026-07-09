@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MySC — Secure connection for seafarers</title>
+  <meta name="description" content="MySC — a secure, private connection built for seafarers. Coming soon." />
+  <style>
+    :root { --navy:#0A1526; --navy2:#12233d; --cyan:#00E5C7; --steel:#3E5C8A; --light:#EAF0F6; --muted:#9fb3cc; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(120% 120% at 50% 0%, var(--navy2) 0%, var(--navy) 60%);
+      color: var(--light);
+      display: flex; align-items: center; justify-content: center;
+      min-height: 100%; text-align: center; padding: 24px;
+    }
+    .wrap { max-width: 560px; }
+    .badge {
+      width: 92px; height: 92px; margin: 0 auto 26px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 50% 40%, #cfe4f2 0%, #9cc3e6 70%, #6c9fd0 100%);
+      border: 2px solid rgba(0,229,199,.5);
+      box-shadow: 0 0 40px rgba(0,229,199,.25);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 30px; color: var(--navy); letter-spacing: 1px;
+    }
+    h1 { font-size: clamp(30px, 7vw, 46px); font-weight: 800; letter-spacing: 2px; }
+    h1 span { color: var(--cyan); }
+    p.tag { color: var(--muted); font-size: 16px; margin-top: 14px; line-height: 1.6; }
+    .soon {
+      margin-top: 28px; display: inline-block;
+      padding: 10px 20px; border-radius: 999px;
+      border: 1px solid rgba(0,229,199,.4); color: var(--cyan);
+      font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700;
+    }
+    .foot { margin-top: 40px; color: #5f7799; font-size: 12px; }
+    .foot a { color: var(--muted); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="badge">⚓</div>
+    <h1>My<span>SC</span></h1>
+    <p class="tag">A secure, private connection built for seafarers.<br>Stay online on any ship network.</p>
+    <div class="soon">Coming soon</div>
+    <p class="foot"><a href="https://t.me/MySC_group">Community</a></p>
+  </main>
+</body>
+</html>
